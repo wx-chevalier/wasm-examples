@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "npm run build && node index.js",
+    "build": "asc ASBindTest.ts -o ASBindTest.wasm --exportRuntime --transform as-bind"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.19.9"
+  },
+  "dependencies": {
+    "as-bind": "^0.8.0"
+  }
+}
